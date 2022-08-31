@@ -90,7 +90,7 @@ int	main(int ac, char **av)
 	ft_valid_map(av, &game);
 	ft_win(&game);
 	mlx_hook(game.mlx_win, 2, 1L << 0, ft_key, &game);
-	mlx_hook(game.mlx_win, 17, 1L << 5, ft_close_win, &game);
+	mlx_hook(game.mlx_win, 33, 1L << 2, ft_close_win, &game);
 	mlx_loop_hook(game.mlx_win, ft_key, &game);
 	mlx_loop(game.mlx);
 	return (0);
